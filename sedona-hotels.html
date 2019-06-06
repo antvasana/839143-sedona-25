@@ -3,19 +3,18 @@
 
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Седона</title>
+  <title>HTML Academy: Поиск гостиниц</title>
   <meta name="format-detection" content="telephone=no">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" type="text/css">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
-
 <body class="container">
   <header class="page-header">
     <nav class="main-navigation">
       <ul class="site-list">
-        <li class="site-list-item active">
-          <a>информация</a>
+        <li class="site-list-item">
+          <a href="index.html">информация</a>
         </li>
         <li class="site-list-item">
           <a href="sedona-photo.html">фото и видео</a>
@@ -23,90 +22,38 @@
         <li class="site-list-item">
           <a href="state-map.html">карта штата</a>
         </li>
-        <li class="site-list-item">
-          <a href="sedona-hotels.html">гостиницы</a>
+        <li class="site-list-item active">
+          <a>гостиницы</a>
         </li>
       </ul>
-      <a class="main-header-logo" href="#">
+      <a class="main-header-logo" href="index.html">
         <img class="main-header-logo-image" src="img/index-logo.svg" width="140" height="71" alt="Логотип сайта Седона">
       </a>
     </nav>
-    <section class="intro">
-      <div class="intro-invite">
-        <img class="intro-invite-text" src="img/text-sedona-index.svg" width="281" height="214"
-          alt="Приглашение посетить Седону">
-      </div>
-      <div class="intro-description">
-        <b class="intro-description-slogan">седона &mdash; небольшой городок в аризоне, заслуживающий большего!</b>
-        <p class="intro-description-reasons">рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
-      </div>
-    </section>
   </header>
   <main class="page-main">
-    <h1 class="visually-hidden">Седона - это поиск жилья в Аризоне</h1>
-    <section class="advantages">
-      <ul class="advantages-list">
-        <li class="advantages-item real-town">
-          <div class="advantages-main-item">
-            <h3 class="advantages-title">настоящий городок</h3>
-            <span class="advantages-number">&ndash; &#8470; 1 &ndash;</span>
-            <p class="advantages-description">седона не аттракцион для туристов, там течет своя жизнь</p>
-          </div>
-          <img class="advantages__image" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x alt="
-            Седона">
-          <ul class="advantages-second-item">
-            <li class="advantages-special">
-              <h4 class="advantages-heading dwelling">жильё</h4>
-              <p class="advantages-element-description">рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-            </li>
-            <li class="advantages-special">
-              <h4 class="advantages-heading gift">сувениры</h4>
-              <p class="advantages-element-description">не только китайского, но и местного производства!</p>
-            </li>
-            <li class="advantages-special">
-              <h4 class="advantages-heading food">еда</h4>
-              <p class="advantages-element-description">всегда заказывайте фирменный бургер, вы&nbsp;не разочаруетесь!
-              </p>
-            </li>
-          </ul>
-        </li>
-        <li class="advantages-item devil-bridge">
-          <div class="advantages-main-item-bridge">
-            <h3 class="advantages-title">там есть мост&nbsp;дьявола</h3>
-            <span class="advantages-number">&ndash; &#8470; 2 &ndash;</span>
-            <p class="advantages-description">да, по нему можно пройти! если вы осмелитесь, конечно</p>
-          </div>
-          <img class="advantages__image" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x"
-            alt="Мост дьявола">
-        </li>
-        <div class="advantages-third-item">
-          <li class="advantages-item other-advantages">
-            <h3 class="other-advantages-title">небольшая площадь</h3>
-            <span class="advantages-number">&ndash; &#8470; 3 &ndash;</span>
-            <p class="advantages-description">все интересные места находятся очень близко</p>
+    <form class="seach-form" method="get" action="https://echo.htmlacademy.ru">
+      <fieldset class="seach-form-infrastructure">
+        <legend class="seach-form-infrastructure-legend">инфраструктура:</legend>
+        <ul class="seach-form-infrastructure-list">
+          <li class="seach-form-infrastructure-option">
+            <input class="visually-hidden pool-input" type="checkbox" name="pool-checkbox"
+              id="seach-form-infrastructure-pool" value="swimming-pool" checked>
+            <label class="seach-form-infrastructure-label pool" for="seach-form-infrastructure-pool">бассейн</label>
           </li>
-          <li class="advantages-item other-advantages">
-            <h3 class="other-advantages-title">красивая дорога</h3>
-            <span class="advantages__number">&ndash; &#8470; 4 &ndash;</span>
-            <p class="advantages-description">ехать в седону из лас-вегаса совсем не скучно!</p>
+          <li class="seach-form-infrastructure-option">
+            <input class="visually-hidden parking-input" type="checkbox" name="parking-checkbox"
+              id="seach-form-infrastructure-parking" value="parking" checked>
+            <label class="seach-form-infrastructure-label parking" for="seach-form-infrastructure-parking">парковка</label>
           </li>
-          <li class="advantages-item other-advantages">
-            <h3 class="other-advantages-title">мало туристов</h3>
-            <span class="advantages-number">&ndash; &#8470; 5 &ndash;</span>
-            <p class="advantages-description">большинство едет в гранд каньон и толпится там</p>
+          <li class="seach-form-infrastructure-option">
+            <input class="visually-hidden wi-fi-input" type="checkbox" name="wi-fi-checkbox"
+              id="seach-form-infrastructure-wi-fi" value="wi-fi" checked>
+            <label class="seach-form-infrastructure-label wi-fi" for="seach-form-infrastructure-wi-fi">wi-fi</label>
           </li>
-        </div>
-      </ul>
-    </section>
-    <section class="search-booking">
-      <h3 class="search-booking-interested">заинтересовались?</h3>
-      <p class="search-booking-trip-date"><span class="search-booking-trip-offer">укажите предполагаемые даты
-          поездки,</span> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <button class="btn search-booking-btn" type="button">поиск гостиницы в седоне</button>
-
-      <img class="search-booking-map" src="img/bg-map-mobile@1x.jpg" width="1200" height="574" alt="Карта поиска">
-
-    </section>
+        </ul>
+      </fieldset>
+    </form>
   </main>
   <footer class="page-footer">
     <b class="page-footer__title">&num;visitsedona</b>
