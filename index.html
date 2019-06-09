@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <meta name="format-detection" content="telephone=no">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" type="text/css">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -45,6 +45,21 @@
   <main class="page-main">
     <h1 class="visually-hidden">Седона - это туристический городок в штате Аризона</h1>
     <section class="advantages">
+      <h2>Преимущества</h2>
+      <ul class="advantage-list">
+        <li>Настоящий городок</li>
+        <li>Мост дьявола</li>
+        <li>Небольшая площадь</li>
+        <li>Красивая дорога</li>
+        <li>Мало туристов</li>
+        <li>
+          <ul class="more-advantages">
+            <li>Жилье</li>
+            <li>Еда</li>
+            <li>Сувениры</li>
+          </ul>
+        </li>
+      </ul>
       <ul class="advantages-list">
         <li class="advantages-item real-town">
           <div class="advantages-main-item">
@@ -105,10 +120,11 @@
   </main>
   <footer class="page-footer">
     <b class="page-footer-hashtag">&num;visitsedona</b>
-    <div class="page-footer-social social">
-      <ul class="social-list">
-        <li class="social-item">
-          <a href="https://www.twitter.com/htmlacademy" class="social-icon twitter" aria-label="Мы в Твиттере">
+    <section class="page-footer-social">
+      <h2 class="visually-hidden">Мы в соцсетях</h2>
+      <ul class="social-buttons">
+        <li class="social-button">
+          <a href="https://www.twitter.com/htmlacademy" class="social-btn-twitter" aria-label="Мы в Твиттере">
             <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
               x="0px" y="0px" width="17.5" height="14.663" viewBox="0 0 17.5 14.663"
               enable-background="new 0 0 17.5 14.663" xml:space="preserve" fill="white">
@@ -121,8 +137,8 @@
             </svg>
           </a>
         </li>
-        <li class="social-item">
-          <a href="https://www.facebook.com/htmlacademy" class="social-icon facebook" aria-label="Мы в Фейсбуке">
+        <li class="social-button">
+          <a href="https://www.facebook.com/htmlacademy" class="social-btn-facebook" aria-label="Мы в Фейсбуке">
             <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
               x="0px" y="0px" width="8.672" height="18.944" viewBox="0 0 8.672 18.944"
               enable-background="new 0 0 8.672 18.944" xml:space="preserve" fill="white">
@@ -131,8 +147,8 @@
             </svg>
           </a>
         </li>
-        <li class="social-item">
-          <a href="https://www.youtube.com/user/htmlacademyru" class="social-icon youtube" aria-label="Мы в Ютубе">
+        <li class="social-button">
+          <a href="https://www.youtube.com/user/htmlacademyru" class="social-btn-youtube" aria-label="Мы в Ютубе">
             <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
               x="0px" y="0px" width="19.979" height="14.015" viewBox="0 0 19.979 14.015"
               enable-background="new 0 0 19.979 14.015" xml:space="preserve" fill="white">
@@ -142,8 +158,8 @@
           </a>
         </li>
       </ul>
-    </div>
-    <div class="page-footer-copyright copyright">
+    </section>
+    <div class="copyright">
       <p class="copyright-text">website by</p>
       <a class="copyright-link" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="HTML Academy" target="_blank">
         <svg xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" viewBox="0 0 26.943 34.09">

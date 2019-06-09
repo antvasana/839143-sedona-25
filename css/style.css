@@ -1,0 +1,12 @@
+html,
+body {
+  margin: 0;
+}
+
+body {
+  min-width: 1200px;
+
+  font-size: 18px;
+  line-height: 1.2;
+  font-family: "PT Sans", "Arial", sans-serif;
+}
