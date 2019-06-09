@@ -49,69 +49,46 @@
     <section class="advantages">
       <h2>Преимущества</h2>
       <ol class="advantage-list">
-        <li>Настоящий городок</li>
-        <li>Мост дьявола</li>
-        <li>Небольшая площадь</li>
-        <li>Красивая дорога</li>
-        <li>Мало туристов</li>
-        <li>
-          <ul class="more-advantages">
-            <li>Жилье</li>
-            <li>Еда</li>
-            <li>Сувениры</li>
-          </ul>
-        </li>
-      </ol>
-      <ul class="advantages-list">
-        <li class="advantages-item real-town">
-          <div class="advantages-main-item">
-            <h3 class="advantages-title">настоящий городок</h3>
+        <li class="advantages-item real-town">Настоящий городок
+          <div class="advantages-item-city">
             <span class="advantages-number">&ndash; &#8470; 1 &ndash;</span>
             <p class="advantages-description">седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
-          <img class="advantages__image" src="img/sedona-city.jpg" width="800" height="256" alt="Седона">
-          <ul class="advantages-second-item">
-            <li class="advantages-special">
-              <h4 class="advantages-heading dwelling">жильё</h4>
-              <p class="advantages-element-description">рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-            </li>
-            <li class="advantages-special">
-              <h4 class="advantages-heading gift">сувениры</h4>
-              <p class="advantages-element-description">не только китайского, но и местного производства!</p>
-            </li>
-            <li class="advantages-special">
-              <h4 class="advantages-heading food">еда</h4>
-              <p class="advantages-element-description">всегда заказывайте фирменный бургер, вы&nbsp;не разочаруетесь!
-              </p>
-            </li>
-          </ul>
+          <img class="advantages-image" src="img/sedona-city.jpg" width="800" height="256" alt="Седона">
         </li>
-        <li class="advantages-item devil-bridge">
-          <div class="advantages-main-item-bridge">
-            <h3 class="advantages-title">там есть мост&nbsp;дьявола</h3>
+        <li class="advantages-item devil-bridge">там есть мост&nbsp;дьявола
+          <div class="advantages-item-bridge">
             <span class="advantages-number">&ndash; &#8470; 2 &ndash;</span>
             <p class="advantages-description">да, по нему можно пройти! если вы осмелитесь, конечно</p>
           </div>
-          <img class="advantages__image" src="img/sedona-bridge.jpg" width="800" height="256" alt="Мост дьявола">
+          <img class="advantages-image" src="img/sedona-bridge.jpg" width="800" height="256" alt="Мост дьявола">
         </li>
-        <div class="advantages-third-item">
-          <li class="advantages-item other-advantages">
-            <h3 class="other-advantages-title">небольшая площадь</h3>
-            <span class="advantages-number">&ndash; &#8470; 3 &ndash;</span>
-            <p class="advantages-description">все интересные места находятся очень близко</p>
-          </li>
-          <li class="advantages-item other-advantages">
-            <h3 class="other-advantages-title">красивая дорога</h3>
-            <span class="advantages__number">&ndash; &#8470; 4 &ndash;</span>
-            <p class="advantages-description">ехать в седону из лас-вегаса совсем не скучно!</p>
-          </li>
-          <li class="advantages-item other-advantages">
-            <h3 class="other-advantages-title">мало туристов</h3>
-            <span class="advantages-number">&ndash; &#8470; 5 &ndash;</span>
-            <p class="advantages-description">большинство едет в гранд каньон и толпится там</p>
-          </li>
-        </div>
-      </ul>
+        <li>Небольшая площадь
+          <span class="advantages-number">&ndash; &#8470; 3 &ndash;</span>
+          <p class="advantages-description">все достопримечательности находятся очень близко</p>
+        </li>
+        <li>Красивая дорога
+          <span class="advantages__number">&ndash; &#8470; 4 &ndash;</span>
+          <p class="advantages-description">ехать в седону из лас-вегаса совсем не скучно!</p>
+        </li>
+        <li>Мало туристов
+          <span class="advantages-number">&ndash; &#8470; 5 &ndash;</span>
+          <p class="advantages-description">большинство едет в гранд каньон и толпится там</p>
+        </li>
+        <li>
+          <ul class="more-advantages">
+            <li>жильё
+              <p class="advantages-element-description">рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            </li>
+            <li>еда
+              <p class="advantages-element-description">всегда заказывайте фирменный бургер, вы&nbsp;не разочаруетесь!</p>
+            </li>
+            <li>сувениры
+              <p class="advantages-element-description">не только китайского, но и местного производства!</p>
+            </li>
+          </ul>
+        </li>
+      </ol>
     </section>
     <section class="search-booking">
       <h3 class="search-booking-interested">заинтересовались?</h3>
@@ -176,6 +153,7 @@
     </div>
   </footer>
   <form class="modal-booking" action="https://echo.htmlacademy.ru" method="post">
+    <h2 class="visually-hidden">Форма поиска гостиницы в седоне</h2>
     <p>
       <label class="" for="modal-check-in">дата заезда</label>
       <input class="modal-date" id="modal-check-in" type="text" name="check-in" placeholder="24 апреля 2017">
@@ -188,7 +166,7 @@
       <label class="" for="modal-check-out">взрослые:</label>
       <input class="modal-date" id="modal-check-out" type="text" name="check-out"><a href="#">-</a>2<a href="#">+</a>
       <label class="" for="modal-check-out">дети:</label>
-      <input class="modal-date" id="modal-check-out" type="text" name="check-out"><a href="#">-</a>2<a href="#">+</a>
+      <input class="modal-date" id="modal-check-out" type="text" name="check-out"><a href="#">-</a>0<a href="#">+</a>
     </p>
     <div class="login-help">
       <button class="btn modal-submit-btn" type="submit">найти</button>
