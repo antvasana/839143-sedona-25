@@ -23,8 +23,8 @@
         <li class="site-list-item">
           <a href="state-map.html">карта штата</a>
         </li>
-        <li class="site-list-item active">
-          <a>гостиницы</a>
+        <li class="site-list-item">
+          <a class="active">гостиницы</a>
         </li>
       </ul>
       <a class="main-header-logo" href="index.html">
@@ -39,7 +39,7 @@
       <form class="filter-seach" method="get" action="https://echo.htmlacademy.ru">
         <fieldset class="filter-seach-infrastructure">
           <legend class="filter-seach-infrastructure-legend">инфраструктура:</legend>
-          <ul class="filter-seach-infrastructure-list">
+          <ul class="filter-seach-infrastructure-list" role="none">
             <li class="filter-seach-infrastructure-option">
               <input class="visually-hidden pool-input" type="checkbox" name="pool-checkbox"
                 id="filter-seach-infrastructure-pool" value="swimming-pool" checked>
@@ -62,7 +62,7 @@
         </fieldset>
         <fieldset class="filter-seach-habitation">
           <legend class="filter-seach-habitation-legend">тип жилья:</legend>
-          <ul class="filter-seach-habitation-list">
+          <ul class="filter-seach-habitation-list" role="none">
             <li class="filter-seach-habitation-option">
               <input class="visually-hidden hotel-input" type="checkbox" name="hotel-checkbox"
                 id="filter-seach-habitation-hotel" value="hotel" checked>
@@ -103,7 +103,7 @@
       <div class="seach-results-quantity">
         <b class="seach-results-report">найдено:</b>
         <p class="seach-results-sorting">сортировка:</p>
-        <a href="#" class="seach-results-sorting-price">по цене</a>
+        <a href="#" class="seach-results-sorting-price active">по цене</a>
         <a href="#" class="seach-results-sorting-type">по типу</a>
         <a href="#" class="seach-results-sorting-rating">по рейтингу</a>
       </div>
@@ -111,30 +111,27 @@
         <h2 class="visually-hidden">Показ найденных предложений</h2>
         <div class="seach-results-demonstration-hotel">
           <img src="img/amara-hotel.jpg" width="135" height="90" alt="Гостиница Amara Resort & Spa">
-          <h3 class="seach-results-demonstration-amara">amara resort & spa</h3>
-          <p class="seach-results-demonstration-hotel-price">гостиница <span
-              class="seach-results-demonstration-price">от 4000 р.</span></p>
-          <button class="seach-results-demonstration-more">подробнее</button>
-          <button class="seach-results-demonstration-booking">забронировать</button>
-          <div class="seach-results-demonstration-rating">рейтинг:8,5</div>
+          <h3 class="seach-results-demonstration-amara"><a href="#">amara resort & spa</a></h3>
+          <p class="seach-results-demonstration-hotel-price">гостиница <span class="seach-results-demonstration-price">от 4000 р.</span></p>
+          <button class="btn seach-results-demonstration-more">подробнее</button>
+          <button class="btn seach-results-demonstration-booking">забронировать</button>
+          <p class="seach-results-demonstration-rating">рейтинг: 8,5</p>
         </div>
         <div class="seach-results-demonstration-motel">
           <img src="img/desert-motel.jpg" width="135" height="90" alt="Мотель Desert Quail Inn">
-          <h3 class="seach-results-demonstration-desert">desert quail inn</h3>
-          <p class="seach-results-demonstration-motel-price">мотель <span class="seach-results-demonstration-price">от
-              3000 р.</span></p>
-          <button class="seach-results-demonstration-more">подробнее</button>
-          <button class="seach-results-demonstration-booking">забронировать</button>
-          <div class="seach-results-demonstration-rating">рейтинг:8,9</div>
+          <h3 class="seach-results-demonstration-desert"><a href="#">desert quail inn</a></h3>
+          <p class="seach-results-demonstration-motel-price">мотель <span class="seach-results-demonstration-price">от 3000 р.</span></p>
+          <button class="btn seach-results-demonstration-more">подробнее</button>
+          <button class="btn seach-results-demonstration-booking">забронировать</button>
+          <p class="seach-results-demonstration-rating">рейтинг: 8,9</p>
         </div>
         <div class="seach-results-demonstration-apartments">
           <img src="img/villas-apartments.jpg" width="135" height="90" alt="Villas at poco diablo">
-          <h3 class="seach-results-demonstration-villas">villas at poco diablo</h3>
-          <p class="seach-results-demonstration-apartments-price">апартаменты <span
-              class="seach-results-demonstration-price">от 2000 р.</span></p>
-          <button class="seach-results-demonstration-more">подробнее</button>
-          <button class="seach-results-demonstration-booking">забронировать</button>
-          <div class="seach-results-demonstration-rating">рейтинг:9,2</div>
+          <h3 class="seach-results-demonstration-villas"><a href="#">villas at poco diablo</a></h3>
+          <p class="seach-results-demonstration-apartments-price">апартаменты <span class="seach-results-demonstration-price">от 2000 р.</span></p>
+          <button class="btn seach-results-demonstration-more">подробнее</button>
+          <button class="btn seach-results-demonstration-booking">забронировать</button>
+          <p class="seach-results-demonstration-rating">рейтинг: 9,2</p>
         </div>
       </section>
     </section>
@@ -142,10 +139,10 @@
   <footer class="page-footer">
       <b class="page-footer-hashtag">&num;visitsedona</b>
       <section class="page-footer-social">
-        <h2 class="visually-hidden">Мы в соцсетях</h2>
+        <h2 class="visually-hidden">Седона в соцсетях</h2>
         <ul class="social-buttons">
           <li class="social-button">
-            <a href="https://www.twitter.com/htmlacademy" class="social-btn-twitter" aria-label="Мы в Твиттере">
+            <a href="https://www.twitter.com/htmlacademy" class="social-btn-twitter" aria-label="Седона в Твиттере">
               <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                 x="0px" y="0px" width="17.5" height="14.663" viewBox="0 0 17.5 14.663"
                 enable-background="new 0 0 17.5 14.663" xml:space="preserve" fill="white">
@@ -159,7 +156,7 @@
             </a>
           </li>
           <li class="social-button">
-            <a href="https://www.facebook.com/htmlacademy" class="social-btn-facebook" aria-label="Мы в Фейсбуке">
+            <a href="https://www.facebook.com/htmlacademy" class="social-btn-facebook" aria-label="Седона в Фейсбуке">
               <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                 x="0px" y="0px" width="8.672" height="18.944" viewBox="0 0 8.672 18.944"
                 enable-background="new 0 0 8.672 18.944" xml:space="preserve" fill="white">
@@ -169,7 +166,7 @@
             </a>
           </li>
           <li class="social-button">
-            <a href="https://www.youtube.com/user/htmlacademyru" class="social-btn-youtube" aria-label="Мы в Ютубе">
+            <a href="https://www.youtube.com/user/htmlacademyru" class="social-btn-youtube" aria-label="Седона в Ютубе">
               <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                 x="0px" y="0px" width="19.979" height="14.015" viewBox="0 0 19.979 14.015"
                 enable-background="new 0 0 19.979 14.015" xml:space="preserve" fill="white">
@@ -187,7 +184,7 @@
             <path
               d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z" />
           </svg>
-          html academy
+
         </a>
       </div>
     </footer>

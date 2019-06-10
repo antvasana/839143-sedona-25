@@ -1,7 +1,18 @@
 html,
 .container {
   margin: 0;
+
+  box-sizing: border-box;
 }
+
+/* *, *::before, *::after { box-sizing: inherit; }
+input, textarea, select, button {
+  font: inherit;
+
+  font-family: inherit;
+}
+
+*/
 
 .container {
   margin: 0 auto;
@@ -12,6 +23,9 @@ html,
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+
+  border: 1px solid #cccccc;
+  box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 
 .visually-hidden {
@@ -32,9 +46,12 @@ a {
   text-decoration: none;
 }
 
-.main-navigation {
-  font-size: 14px;
-  line-height: 26px;
+.btn {
+  font-family: inherit;
+  text-transform: inherit;
+  border: none;
+
+  cursor: pointer;
 }
 
 .site-list {
@@ -54,6 +71,10 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.site-list .active {
+  color: #766357;
+}
+
 .intro-invite,
 .filters {
   background-color: #87b3d0;
@@ -63,6 +84,15 @@ a {
   background-image: url("../img/bg-index.jpg");
   background-repeat: no-repeat;
   background-position: top center;
+}
+
+.intro-description-slogan {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.intro-description-reasons {
+  color: #333333;
 }
 
 .filters {
@@ -90,29 +120,165 @@ a {
   font-weight: bold;
 }
 
-.intro-description-slogan {
-  font-size: 21px;
-  line-height: 26px;
-}
-
-.intro-description-reasons {
-  color: #333333;
-}
-
 .advantage-list {
   list-style: none;
 }
 
-.advantages-item-city,
-.advantages-item-bridge {
+.advantages-item {
   font-size: 14px;
   line-height: 21px;
+}
+
+.advantages-item-city,
+.advantages-item-bridge {
+  width: 400px;
+
   color: #ffffff;
   background-color: #81b3d2;
 }
 
+.advantages-item h3 {
+  font-size: 21px;
+  line-height: 21px;
+}
+
 .more-advantages {
   list-style: none;
+}
+
+.seach-results-quantity {
+  font-size: 12px;
+  line-height: 18px;
+  text-align: left;
+}
+
+.seach-results-report {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.seach-results-quantity a {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.seach-results-quantity a:hover {
+  color: #81b3d2;
+}
+
+.seach-results-quantity a:focus {
+  color: #000000;
+}
+
+.seach-results-quantity .active {
+  color: #81b3d2;
+}
+
+.seach-results-demonstration {
+  font-size: 14px;
+  line-height: 21px;
+  text-align: left;
+}
+
+.seach-results-demonstration a {
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.seach-results-demonstration a:hover {
+  color: #81b3d2;
+}
+
+.seach-results-demonstration a:focus {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.seach-results-demonstration-more,
+.seach-results-demonstration-booking {
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.seach-results-demonstration-more {
+  padding: 7px 17px;
+
+  background-color: #81b3d2;
+}
+
+.seach-results-demonstration-more:hover {
+  background-color: #669ec0;
+}
+
+.seach-results-demonstration-more:focus {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+
+.seach-results-demonstration-booking {
+  padding: 7px 16px;
+
+  background-color: #766357;
+}
+
+.seach-results-demonstration-booking:hover {
+  background-color: #604e43;
+}
+
+.seach-results-demonstration-booking:focus {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
+}
+
+.seach-results-demonstration-rating {
+  width: 110px;
+
+  color: #666666;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+.search-booking-interested {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.search-booking-trip-date {
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.search-booking-btn {
+  padding: 35px 139px 33px 140px;
+
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #766357;
+}
+
+.search-booking-btn:hover {
+  background-color: #604e43;
+}
+
+.search-booking-btn:focus {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
+}
+
+.social-buttons {
+  list-style: none;
+}
+
+.logo-htmlacademy:hover {
+  display:none;
+}
+
+.copyright-link:hover {
+  background-image: url("../img/logo-htmlacademy2.svg");
+  background-repeat: no-repeat;
 }
 
 
