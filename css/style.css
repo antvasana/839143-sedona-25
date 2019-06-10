@@ -1,12 +1,118 @@
 html,
-body {
+.container {
   margin: 0;
 }
 
-body {
-  min-width: 1200px;
+.container {
+  margin: 0 auto;
+  width: 1200px;
 
-  font-size: 18px;
-  line-height: 1.2;
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
 }
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip: rect(0, 0, 0, 0);
+
+  white-space: nowrap;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.site-list {
+  list-style: none;
+}
+
+.site-list a {
+  color: #000000;
+  font-weight: bold;
+}
+
+.site-list a:hover {
+  color: #81b3d2;
+}
+
+.site-list a:focus {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.intro-invite,
+.filters {
+  background-color: #87b3d0;
+}
+
+.intro-invite {
+  background-image: url("../img/bg-index.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.filters {
+  background-image: url("../img/bg-filter.jpg");
+  background-repeat: no-repeat;
+  background-position: 20% 30%;
+
+  color: #ffffff;
+  text-align: left;
+}
+
+.filter-seach-infrastructure-list,
+.filter-seach-habitation-list {
+  list-style: none;
+}
+
+.filter-seach {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.filter-seach legend {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: bold;
+}
+
+.intro-description-slogan {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.intro-description-reasons {
+  color: #333333;
+}
+
+.advantage-list {
+  list-style: none;
+}
+
+.advantages-item-city,
+.advantages-item-bridge {
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.more-advantages {
+  list-style: none;
+}
+
+
