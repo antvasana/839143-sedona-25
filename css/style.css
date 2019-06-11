@@ -272,13 +272,12 @@ a {
   list-style: none;
 }
 
-.logo-htmlacademy:hover {
-  display:none;
+.copyright-link path:hover {
+  fill: #81b3d2;
 }
 
-.copyright-link:hover {
-  background-image: url("../img/logo-htmlacademy2.svg");
-  background-repeat: no-repeat;
+.copyright-link path:focus {
+  fill: #bdbbbc;
 }
 
 
