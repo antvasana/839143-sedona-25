@@ -55,7 +55,22 @@ a {
 }
 
 .site-list {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 72px;
+  padding-right: 72px;
+
   list-style: none;
+}
+
+.site-list li:nth-child(1),
+.site-list li:nth-child(2) {
+  text-align: left;
+}
+
+.site-list li:nth-child(3),
+.site-list li:nth-child(4) {
+  text-align: right;
 }
 
 .site-list a {
@@ -121,6 +136,8 @@ a {
 }
 
 .advantage-list {
+  padding-left: 0;
+
   list-style: none;
 }
 
@@ -129,9 +146,18 @@ a {
   line-height: 21px;
 }
 
+.real-town,
+.devil-bridge {
+  display: flex;
+}
+
+.devil-bridge {
+  flex-direction: row-reverse;
+}
+
 .advantages-item-city,
 .advantages-item-bridge {
-  width: 400px;
+  width: auto;
 
   color: #ffffff;
   background-color: #81b3d2;
@@ -268,9 +294,52 @@ a {
   background-color: #503e33;
 }
 
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
 .social-buttons {
+  display: flex;
+  justify-content: space-between;
+
   list-style: none;
 }
+
+.social-button {
+  margin-right: 6px;
+  width: 46px;
+  height: 48px;
+}
+
+.social-button:nth-child(3) {
+  margin-right: 0;
+}
+
+.social-button a {
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 10px;
+
+  background-color: #81b3d2;
+}
+
+.social-button:nth-child(2) a {
+  padding-bottom: 6px;
+}
+
+.social-button a:hover {
+  background-color: #669ec0;
+}
+
+.social-button a:focus {
+  background-color: #5496bd;
+}
+
+.social-btn path:focus {
+  fill: rgba(255, 255, 255, 0.3);
+}
+
 
 .copyright-link path:hover {
   fill: #81b3d2;
@@ -279,5 +348,3 @@ a {
 .copyright-link path:focus {
   fill: #bdbbbc;
 }
-
-
