@@ -14,6 +14,12 @@ input, textarea, select, button {
 
 */
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 .container {
   margin: 0 auto;
   width: 1200px;
@@ -121,12 +127,23 @@ a {
   background-position: top center;
 }
 
+.intro-invite-text {
+  padding-top: 76px;
+  padding-bottom: 70px;
+}
+
 .intro-description-slogan {
+  padding-top: 61px;
+  padding-left: 380px;
+  padding-right: 380px;
+
   font-size: 21px;
   line-height: 26px;
 }
 
 .intro-description-reasons {
+  margin-bottom: 56px;
+
   color: #333333;
 }
 
@@ -235,6 +252,14 @@ a {
   list-style: none;
 }
 
+.more-advantages h3 {
+  padding-top: 164px;
+}
+
+.more-advantages p {
+  padding-bottom: 85px;
+}
+
 .seach-results-quantity {
   display: flex;
   align-items: center;
@@ -250,12 +275,25 @@ a {
 }
 
 .seach-results-report {
+  margin-right: 49px;
+
   font-size: 21px;
   line-height: 26px;
 }
 
+.seach-results-sorting {
+  margin-right: 40px;
+}
+
 .seach-results-quantity a {
+  margin-right: 33px;
+
   color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.seach-results-quantity .seach-results-sorting-rating {
+  margin-right: 0;
 }
 
 .seach-results-quantity a:hover {
@@ -264,10 +302,12 @@ a {
 
 .seach-results-quantity a:focus {
   color: #000000;
+  border-bottom: none;
 }
 
 .seach-results-quantity .active {
   color: #81b3d2;
+  border-bottom: none;
 
   cursor: auto;
 }
@@ -282,11 +322,31 @@ a {
 .seach-results-demonstration-motel,
 .seach-results-demonstration-apartments {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+
   padding-top: 31px;
   padding-bottom: 33px;
+  padding-left: 72px;
 
   border-bottom: 1px solid #e5e5e5;
+}
+
+.seach-results-booking {
+  display: flex;
+}
+
+.seach-results-booking img {
+  margin-right: 30px;
+}
+
+.seach-results-demonstration h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.seach-results-information p {
+  margin-top: 3px;
+  margin-bottom: 5px;
 }
 
 .seach-results-demonstration a {
@@ -303,6 +363,18 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.seach-results-demonstration-hotel-price {
+  margin-left: 39px;
+}
+
+.seach-results-demonstration-motel-price {
+  margin-left: 64px;
+}
+
+.seach-results-demonstration-apartments-price {
+  margin-left: 21px;
+}
+
 .seach-results-demonstration-more,
 .seach-results-demonstration-booking {
   font-size: 14px;
@@ -311,6 +383,7 @@ a {
 }
 
 .seach-results-demonstration-more {
+  margin-right: 6px;
   padding: 7px 17px;
 
   background-color: #81b3d2;
@@ -341,6 +414,9 @@ a {
 }
 
 .seach-results-demonstration-rating {
+  align-self: flex-end;
+  margin-bottom: 0;
+  margin-right: 73px;
   width: 110px;
 
   color: #666666;
@@ -381,6 +457,18 @@ a {
 .page-footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
+  padding-top: 15px;
+}
+
+.page-footer-hashtag {
+  padding-left: 132px;
+
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
 }
 
 .social-buttons {
@@ -424,6 +512,15 @@ a {
   fill: rgba(255, 255, 255, 0.3);
 }
 
+.copyright {
+  display: flex;
+  padding-right: 101px;
+}
+
+.copyright-link {
+  margin-left: 8px;
+}
+
 
 .copyright-link path:hover {
   fill: #81b3d2;
@@ -433,3 +530,25 @@ a {
   fill: #bdbbbc;
 }
 
+.modal-submit-btn {
+  padding: 17px 197px 22px 196px;
+
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.modal-submit-btn:hover {
+  background-color: #669ec0;
+}
+
+.modal-submit-btn:focus {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+
+  /*div, section, article, a, ul, li, p, footer, header, img {
+  outline: 1px solid red;
+  }*/

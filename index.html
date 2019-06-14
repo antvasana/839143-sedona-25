@@ -39,7 +39,7 @@
           alt="Приглашение посетить Седону">
       </div>
       <div class="intro-description">
-        <b class="intro-description-slogan">седона &mdash; небольшой городок в аризоне, заслуживающий большего!</b>
+        <h2 class="intro-description-slogan">седона &mdash; небольшой городок в аризоне, заслуживающий большего!</h2>
         <p class="intro-description-reasons">рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
       </div>
     </section>
@@ -103,12 +103,14 @@
       <h2 class="search-booking-interested">заинтересовались?</h2>
       <p class="search-booking-trip-date">укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
       <button class="btn search-booking-btn" type="button">поиск гостиницы в седоне</button>
-      <img class="search-booking-map" src="img/sedona-map.jpg" width="1200" height="574"
-        alt="Карта поиска гостиницы в Седоне">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104769.6626235882!2d-111.79685732532282!3d34.85492178798394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1560290180128!5m2!1sru!2sru"
+        width="1200" height="593" style="border:0" allowfullscreen>
+      </iframe>
     </section>
   </main>
   <footer class="page-footer">
-    <b class="page-footer-hashtag">&num;visitsedona</b>
+    <a class="page-footer-hashtag" href="#">&num;visitsedona</a>
     <section class="page-footer-social">
       <h2 class="visually-hidden">Седона в соцсетях</h2>
       <ul class="social-buttons">
@@ -154,12 +156,12 @@
   <form class="modal-booking" action="https://echo.htmlacademy.ru" method="post">
     <h2 class="visually-hidden">Форма поиска гостиницы в седоне</h2>
     <p>
-      <label class="" for="modal-check-in">дата заезда</label>
-      <input class="modal-date" id="modal-check-in" type="text" name="check-in" placeholder="24 апреля 2017">
+      <label for="modal-arrive">дата заезда</label>
+      <input class="modal-date" id="modal-arrive" type="text" name="check-in" placeholder="24 апреля 2017">
     </p>
     <p>
-      <label class="" for="modal-check-out">дата выезда</label>
-      <input class="modal-date" id="modal-check-out" type="text" name="check-out" placeholder="4 июля 2017">
+      <label for="modal-departure">дата выезда</label>
+      <input class="modal-date" id="modal-departure" type="text" name="check-out" placeholder="4 июля 2017">
     </p>
     <p>
       <label class="" for="modal-check-out">взрослые:</label>
@@ -171,6 +173,7 @@
       <button class="btn modal-submit-btn" type="submit">найти</button>
     </div>
   </form>
+  <br><br><br><br>
 </body>
 
 </html>
