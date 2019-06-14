@@ -34,7 +34,9 @@ input, textarea, select, button {
   box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
 
   width: 1px;
@@ -43,13 +45,20 @@ input, textarea, select, button {
   border: 0;
   padding: 0;
 
-  clip: rect(0, 0, 0, 0);
-
   white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 a {
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .btn {
@@ -72,6 +81,7 @@ a {
 
 .site-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 
   margin-top: 0;
@@ -201,7 +211,7 @@ a {
   background-color: #ffffff;
 }
 
-.advantage-list {
+.reasons-list {
   display: flex;
   flex-wrap: wrap;
 
@@ -210,15 +220,15 @@ a {
   list-style: none;
 }
 
-.advantage-list li:nth-child(6) {
+.reasons-list li:nth-child(6) {
   order: -1;
 }
 
-.advantage-list li:nth-child(1) {
+.reasons-list li:nth-child(1) {
   order: -2;
 }
 
-.advantages-item {
+.reasons-item {
   font-size: 14px;
   line-height: 21px;
 }
@@ -232,31 +242,31 @@ a {
   flex-direction: row-reverse;
 }
 
-.advantages-item-city,
-.advantages-item-bridge {
+.item-city,
+.item-bridge {
   width: auto;
 
   color: #ffffff;
   background-color: #81b3d2;
 }
 
-.advantages-item h3 {
+.reasons-item h3 {
   font-size: 21px;
   line-height: 21px;
 }
 
-.more-advantages {
+.more-reasons {
   display: flex;
   justify-content: space-between;
 
   list-style: none;
 }
 
-.more-advantages h3 {
+.more-reasons h3 {
   padding-top: 164px;
 }
 
-.more-advantages p {
+.more-reasons p {
   padding-bottom: 85px;
 }
 
