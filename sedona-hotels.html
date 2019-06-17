@@ -41,19 +41,20 @@
         <fieldset class="filter-seach-infrastructure">
           <legend class="filter-seach-infrastructure-legend">инфраструктура:</legend>
           <ul class="filter-seach-infrastructure-list" role="none">
-            <li class="filter-seach-infrastructure-option">
+            <li class="filter-option">
               <input class="visually-hidden pool-input" type="checkbox" name="pool-checkbox"
                 id="filter-seach-infrastructure-pool" value="swimming-pool" checked>
               <label class="filter-seach-infrastructure-label pool"
                 for="filter-seach-infrastructure-pool">бассейн</label>
             </li>
-            <li class="filter-seach-infrastructure-option">
+            <li class="filter-option">
               <input class="visually-hidden parking-input" type="checkbox" name="parking-checkbox"
                 id="filter-seach-infrastructure-parking" value="parking">
               <label class="filter-seach-infrastructure-label parking"
                 for="filter-seach-infrastructure-parking">парковка</label>
             </li>
-            <li class="filter-seach-infrastructure-option">
+            <li class="filter-option">
+              <!--filter-seach-infrastructure-option-->
               <input class="visually-hidden wi-fi-input" type="checkbox" name="wi-fi-checkbox"
                 id="filter-seach-infrastructure-wi-fi" value="wi-fi">
               <label class="filter-seach-infrastructure-label wi-fi"
@@ -64,17 +65,18 @@
         <fieldset class="filter-seach-habitation">
           <legend class="filter-seach-habitation-legend">тип жилья:</legend>
           <ul class="filter-seach-habitation-list" role="none">
-            <li class="filter-seach-habitation-option">
+            <li class="filter-option">
+              <!--filter-seach-habitation-option-->
               <input class="visually-hidden hotel-input" type="checkbox" name="hotel-checkbox"
                 id="filter-seach-habitation-hotel" value="hotel" checked>
               <label class="filter-seach-habitation-label hotel" for="filter-seach-habitation-hotel">гостиница</label>
             </li>
-            <li class="filter-seach-habitation-option">
+            <li class="filter-option">
               <input class="visually-hidden motel-input" type="checkbox" name="motel-checkbox"
                 id="filter-seach-habitation-motel" value="motel" checked>
               <label class="filter-seach-habitation-label motel" for="filter-seach-habitation-motel">мотель</label>
             </li>
-            <li class="filter-seach-habitation-option">
+            <li class="filter-option">
               <input class="visually-hidden apartments-input" type="checkbox" name="apartments-checkbox"
                 id="filter-seach-habitation-apartments" value="apartments" checked>
               <label class="filter-seach-habitation-label apartments"
@@ -82,30 +84,58 @@
             </li>
           </ul>
         </fieldset>
+        <!--<div class="filter-range">
+          <div class="filter-range-title">Стоимость в сутки (р):</div>
+          <div class="price-controls">
+            <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+            <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+          </div>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="range-toggle range-toggle-min"></div>
+            <div class="range-toggle range-toggle-max"></div>
+          </div>
+          <button class="btn-transparent" type="submit">Показать</button>
+        </div>-->
         <fieldset class="filter-seach-price">
           <legend class="filter-seach-price-legend">стоимость в сутки (р):</legend>
-          <table class="filter-seach-price-table">
-            <tr class="filter-seach-price-range">
-              <td class="filter-seach-price-min">от 0</td>
-              <td class="filter-seach-price-max">до 3000</td>
-            </tr>
-          </table>
-          <div class="inner-price">
-            <div class="inner-price-1"></div>
-            <div class="inner-price-2"></div>
+          <div class="price-controls">
+            <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+            <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
           </div>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="range-toggle range-toggle-min"></div>
+            <div class="range-toggle range-toggle-max"></div>
+          </div>
+          <button class="btn filter-seach-send-btn" type="submit">Показать</button>
         </fieldset>
-        <div class="filter-seach-submit">
-          <button class="btn filter-seach-send-btn" type="submit">показать</button>
-        </div>
       </form>
     </section>
     <section class="seach-results">
-      <h2 class="seach-results-report">найдено: 3</h2>
-      <p class="seach-results-sorting">сортировка:</p>
-      <a href="#" class="seach-results-sorting-price active">по цене</a>
-      <a href="#" class="seach-results-sorting-type">по типу</a>
-      <a href="#" class="seach-results-sorting-rating">по рейтингу</a>
+      <div class="seach-results-found">
+        <h2 class="seach-results-report">найдено: 3</h2>
+        <p class="seach-results-sorting">сортировка:</p>
+        <a href="#" class="seach-results-sorting-price active">по цене</a>
+        <a href="#" class="seach-results-sorting-type">по типу</a>
+        <a href="#" class="seach-results-sorting-rating">по рейтингу</a>
+      </div>
+      <div class="seach-results-move">
+        <a href="#" class="seach-results-move-up">
+          <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+            <path fill="#cacaca" d="M5.5 0L0 10h11z" />
+          </svg>
+        </a>
+        <a href="#" class="seach-results-move-down active">
+          <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+            <path fill="#231F20" d="M5.5 10L0 0h11" />
+          </svg>
+        </a>
+      </div>
     </section>
     <section class="seach-results-demonstration">
       <h2 class="visually-hidden">Показ найденных предложений</h2>
@@ -153,7 +183,8 @@
       <h2 class="visually-hidden">Седона в соцсетях</h2>
       <ul class="social-buttons">
         <li class="social-button">
-          <a href="https://www.twitter.com/htmlacademy" class="social-btn twitter"><span class="visually-hidden">Седона в Твиттере</span>
+          <a href="https://www.twitter.com/htmlacademy" class="social-btn twitter"><span class="visually-hidden">Седона
+              в Твиттере</span>
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15"
               viewBox="0 0 17 15">
               <image width="17" height="15" overflow="visible" xlink:href="t.png" />
@@ -163,14 +194,16 @@
           </a>
         </li>
         <li class="social-button">
-          <a href="https://www.facebook.com/htmlacademy" class="social-btn facebook"><span class="visually-hidden">Седона в Фейсбуке</span>
+          <a href="https://www.facebook.com/htmlacademy" class="social-btn facebook"><span
+              class="visually-hidden">Седона в Фейсбуке</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
               <path fill="#ffffff" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" />
             </svg>
           </a>
         </li>
         <li class="social-button">
-          <a href="https://www.youtube.com/user/htmlacademyru" class="social-btn youtube"><span class="visually-hidden">Седона в Ютубе</span>
+          <a href="https://www.youtube.com/user/htmlacademyru" class="social-btn youtube"><span
+              class="visually-hidden">Седона в Ютубе</span>
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16"
               viewBox="0 0 20 16">
               <image width="20" height="16" overflow="visible" xlink:href="youtube.png" />
