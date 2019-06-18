@@ -101,10 +101,13 @@
         </div>-->
         <fieldset class="filter-seach-price">
           <legend class="filter-seach-price-legend">стоимость в сутки (р):</legend>
-          <div class="price-controls">
-            <label class="min-price">от <input type="text" name="min-price" value="0"></label>
-            <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
-          </div>
+          <table class="price-controls">
+            <td><label class="min-price">от <input type="text" name="min-price" value="0"></label>
+            </td>
+            <td>
+              <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+            </td>
+          </table
           <div class="range-controls">
             <div class="scale">
               <div class="bar"></div>
@@ -112,8 +115,10 @@
             <div class="range-toggle range-toggle-min"></div>
             <div class="range-toggle range-toggle-max"></div>
           </div>
-          <button class="btn filter-seach-send-btn" type="submit">Показать</button>
         </fieldset>
+        <div class="filter-seach-send">
+          <button class="btn filter-seach-send-btn" type="submit">Показать</button>
+        </div>
       </form>
     </section>
     <section class="seach-results">
@@ -149,7 +154,9 @@
             <button class="btn seach-results-demonstration-booking">забронировать</button>
           </div>
         </div>
-        <p class="seach-results-demonstration-rating">рейтинг: 8,5</p>
+        <div class="hotel-rating">
+          <p class="seach-results-demonstration-rating">рейтинг: 8,5</p>
+        </div>
       </div>
       <div class="seach-results-demonstration-motel">
         <div class="seach-results-booking">
@@ -161,7 +168,9 @@
             <button class="btn seach-results-demonstration-booking">забронировать</button>
           </div>
         </div>
-        <p class="seach-results-demonstration-rating">рейтинг: 8,9</p>
+        <div class="motel-rating">
+          <p class="seach-results-demonstration-rating">рейтинг: 8,9</p>
+        </div>
       </div>
       <div class="seach-results-demonstration-apartments">
         <div class="seach-results-booking">
@@ -173,7 +182,9 @@
             <button class="btn seach-results-demonstration-booking">забронировать</button>
           </div>
         </div>
-        <p class="seach-results-demonstration-rating">рейтинг: 9,2</p>
+        <div class="apartments-rating">
+          <p class="seach-results-demonstration-rating">рейтинг: 9,2</p>
+        </div>
       </div>
     </section>
   </main>
