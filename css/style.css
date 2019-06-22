@@ -82,14 +82,6 @@ img {
   position: relative;
 }
 
-.main-header-logo {
-  position: absolute;
-  top: 0;
-  left: 50%;
-
-  margin-left: -70px;
-}
-
 .site-list {
   display: flex;
   flex-wrap: wrap;
@@ -108,7 +100,7 @@ img {
 }
 
 .site-list li:nth-child(2) {
-  margin-right: 140px;
+  margin-right: 150px;
 }
 
 .site-list li:nth-child(3),
@@ -117,7 +109,7 @@ img {
 }
 
 .site-list li:nth-child(3) {
-  margin-left: 90px;
+  margin-left: 80px;
 }
 
 .site-list a {
@@ -136,6 +128,14 @@ img {
 
 .site-list .current {
   color: #766357;
+}
+
+.main-header-logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  margin-left: -70px;
 }
 
 .intro-invite,
@@ -466,7 +466,7 @@ img {
   padding-right: 7px;
 }
 
-.item-city h3 {
+.item-city h2 {
   margin-top: 46px;
   margin-bottom: 23px;
   margin-left: 140px;
@@ -486,11 +486,11 @@ img {
   max-width: 280px;
 }
 
-.item-bridge h3 {
+.item-bridge h2 {
   margin-top: 46px;
   margin-bottom: 23px;
-  margin-left: 130px;
-  margin-right: 130px;
+  margin-left: 110px;
+  margin-right: 110px;
   padding-bottom: 1px;
 }
 
@@ -502,6 +502,7 @@ img {
   max-width: 303px;
 }
 
+.reasons-item h2,
 .reasons-item h3 {
   font-size: 21px;
   line-height: 21px;
@@ -525,7 +526,7 @@ img {
 .beautiful-road h3,
 .few-tourists h3 {
   margin-top: 50px;
-  margin-left: 130px;
+  margin-left: 139px;
   padding-bottom: 1px;
 
   max-width: 125px;
@@ -534,8 +535,9 @@ img {
 .sights p,
 .beautiful-road p,
 .few-tourists p {
-  margin-left: 60px;
-  padding-bottom: 50px;
+  margin-top: 23px;
+  margin-left: 65px;
+  padding-bottom: 48px;
 
   max-width: 270px;
 }
@@ -554,8 +556,14 @@ img {
   padding-right: 45px;
 }
 
+.more-reasons li:nth-child(2) {
+  padding-left: 30px;
+  padding-right: 45px;
+}
+
 .more-reasons h3 {
-  margin-top: 70px;
+  margin-top: 80px;
+  margin-right: 5px;
   position: relative;
 
   padding-top: 80px;
@@ -607,7 +615,9 @@ img {
 }
 
 .more-reasons p {
-  padding-bottom: 85px;
+  margin-top: 18px;
+  margin-right: 3px;
+  padding-bottom: 70px;
 }
 
 .seach-results {
@@ -824,14 +834,14 @@ img {
 }
 
 .search-booking-interested {
-  margin-top: 0;
+  margin-top: 2px;
 
   font-size: 30px;
   line-height: 36px;
 }
 
 .search-booking-trip-date {
-  margin-bottom: 52px;
+  margin-bottom: 49px;
 
   font-size: 14px;
   line-height: 24px;
@@ -841,7 +851,7 @@ img {
 .search-booking-btn {
   position: relative;
 
-  padding: 35px 139px 33px 140px;
+  padding: 30px 139px 30px 140px;
 
   font-size: 21px;
   line-height: 26px;
@@ -878,6 +888,7 @@ img {
 }
 
 .page-footer-hashtag {
+  margin-bottom: 3px;
   padding-left: 132px;
 
   font-size: 21px;
@@ -891,6 +902,8 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto;
+  margin-bottom: 4px;
+  margin-left: 20px;
   padding: 0;
 
   list-style: none;
