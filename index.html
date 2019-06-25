@@ -12,9 +12,7 @@
 </head>
 
 <body>
-
   <div class="container">
-
     <header class="page-header">
       <nav class="main-navigation">
         <ul class="site-list">
@@ -91,7 +89,8 @@
               </li>
               <li class="reasons-item">
                 <h3 class="reasons-food">еда</h3>
-                <p class="reasons-element-description">всегда заказывайте фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!
+                <p class="reasons-element-description">всегда заказывайте фирменный бургер,
+                  вы&nbsp;не&nbsp;разочаруетесь!
                 </p>
               </li>
               <li class="reasons-item">
@@ -134,12 +133,23 @@
             <input class="modal-date" id="modal-departure" type="text" name="check-out" placeholder="4 июля 2017">
           </p>
           <p class="modal-person-booking">
-            <label for="adults">взрослые:</label>
-            <input class="modal-adults" id="adults" type="text" name="adults"><a href="#">-</a>2<a href="#">+</a>
-            <label for="children">дети:</label>
-            <input class="modal-children" id="children" type="text" name="children"><a href="#">-</a>0<a href="#">+</a>
-          </p>
-          <div class="login-help">
+          <div class="booking-number-container">
+            <div class="booking-number-adult">
+              <label for="number-adult-field">Взрослые:</label>
+              <button class="minus-btn" type="button" aria-label="Уменьшить на 1"></button>
+              <input class="number-persons" type="text" id="number-adult-field" name="number-adult" value="2" pattern="[0-9]{1,2}"
+                required>
+              <button class="plus-btn" type="button" aria-label="Увеличить на 1"></button>
+            </div>
+            <div class="booking-number-children">
+              <label for="number-children-field">Дети:</label>
+              <button class="minus-btn" type="button" aria-label="Уменьшить на 1"></button>
+              <input class="number-persons" type="text" id="number-children-field" name="number-children" value="0"
+                pattern="[0-9]{1,2}">
+              <button class="plus-btn" type="button" aria-label="Увеличить на 1"></button>
+            </div>
+          </div>
+          <div class="modal-submit">
             <button class="btn modal-submit-btn" type="submit">найти</button>
           </div>
         </form>
@@ -198,9 +208,7 @@
         </a>
       </div>
     </footer>
-
   </div>
-  <br><br><br><br>
 </body>
 
 </html>
