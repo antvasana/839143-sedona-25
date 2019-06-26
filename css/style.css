@@ -862,6 +862,7 @@ img {
 
   font-size: 30px;
   line-height: 36px;
+  font-weight: bold;
 }
 
 .search-booking-trip-date {
@@ -990,11 +991,55 @@ img {
   fill: #bdbbbc;
 }
 
+@keyframes emerging {
+  0% {
+    opacity: 0.1;
+  }
+
+  50% {
+    opacity: 0.3;
+  }
+
+  70% {
+    topacity: 0.5;
+  }
+
+  90% {
+    opacity: 0.7;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 .modal-booking {
   position: absolute;
   left: 50%;
 
-  /*display: none;*/
+  display: none;
   margin-left: -284px;
   box-sizing: inherit;
 
@@ -1006,12 +1051,17 @@ img {
   box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
 }
 
-/*.modal-booking p {
-  margin-left: 55px;
-  margin-bottom: 45px;
-}*/
+.modal-show {
+  display: block;
 
-.modal-booking p:nth-child(2) {
+  animation: emerging 1s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+.modal-arrive-booking {
   margin-top: 50px;
 }
 
@@ -1024,18 +1074,30 @@ img {
   position: relative;
 
   margin-left: 55px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+}
+
+.modal-departure-booking {
+  margin-bottom: 25px;
 }
 
 .modal-arrive-booking input[type="text"],
 .modal-departure-booking input[type="text"] {
-  padding-top: 12px;
-  padding-bottom: 11px;
-  padding-left: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 10px;
   width: 346px;
+
+  text-transform: uppercase;
 
   border: 2px solid #f2f2f2;
   background-color: #f2f2f2;
+}
+
+.modal-arrive-booking input[type="text"] {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 12px;
 }
 
 .modal-arrive-booking input[type="text"]:hover,
@@ -1100,11 +1162,12 @@ img {
 
 .booking-number-container input[type="text"] {
   padding-top: 10px;
-  padding-bottom: 7px;
+  padding-bottom: 5px;
   width: 110px;
 
   text-align: center;
   font-weight: bold;
+  text-transform: uppercase;
 
   border: none;
   background-color: #f2f2f2;
@@ -1116,51 +1179,81 @@ img {
 }
 
 .booking-number-children input[type="text"] {
-  margin-left: 30px;
+  margin-left: 32px;
 }
 
 .booking-number-adult .minus-btn,
 .booking-number-children .minus-btn {
   position: absolute;
-  top: 20px;
+  top: 3px;
 
-  width: 3px;
-  height: 3px;
+  width: 38px;
+  height: 38px;
 
-  /*border: none;*/
+  font-size: 24px;
+  line-height: 24px;
+
+  color: #a9a9a9;
+  background-color: transparent;
+  border: none;
   cursor: pointer;
+}
 
-  background-color: red;
+.booking-number-adult .minus-btn:hover,
+.booking-number-children .minus-btn:hover {
+  color: #000000;
+}
+
+.booking-number-adult .minus-btn:focus,
+.booking-number-children .minus-btn:focus,
+.booking-number-adult .minus-btn:active,
+.booking-number-children .minus-btn:active {
+  color: #81b3d2;
 }
 
 .booking-number-adult .minus-btn {
-  left: 130px;
+  left: 114px;
 }
 
 .booking-number-children .minus-btn {
-  left: 85px;
+  left: 75px;
 }
 
 .booking-number-adult .plus-btn,
 .booking-number-children .plus-btn {
   position: absolute;
-  top: 20px;
+  top: 2px;
 
-  width: 3px;
-  height: 3px;
+  width: 38px;
+  height: 38px;
 
-  /*border: none;*/
+  font-size: 22px;
+  line-height: 22px;
+
+  color: #a9a9a9;
+  background-color: transparent;
+  border: none;
   cursor: pointer;
+}
 
-  background-color: red;
+.booking-number-adult .plus-btn:hover,
+.booking-number-children .plus-btn:hover {
+  color: #000000;
+}
+
+.booking-number-adult .plus-btn:focus,
+.booking-number-children .plus-btn:focus,
+.booking-number-adult .plus-btn:active,
+.booking-number-children .plus-btn:active {
+  color: #81b3d2;
 }
 
 .booking-number-adult .plus-btn {
-  right: 60px;
+  right: 53px;
 }
 
 .booking-number-children .plus-btn {
-  right: 15px;
+  right: 6px;
 }
 
 .modal-submit-btn {
