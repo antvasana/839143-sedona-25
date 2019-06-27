@@ -11,15 +11,6 @@ body {
 input,
 button {
   box-sizing: inherit;
-  font: inherit;
-}
-
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-
   font-family: inherit;
 }
 
@@ -692,7 +683,7 @@ img {
   border-bottom: none;
 }
 
-.seach-results-found .active {
+.seach-results-found .current {
   color: #81b3d2;
   border-bottom: none;
 
@@ -765,7 +756,8 @@ img {
   color: #81b3d2;
 }
 
-.seach-results-demonstration a:focus {
+.seach-results-demonstration a:focus,
+.seach-results-demonstration a:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -889,8 +881,9 @@ img {
   background-color: #604e43;
 }
 
-.search-booking-btn:focus {
-  color: rgba(255, 255, 255, 0.3);
+.search-booking-btn:focus,
+.search-booking-btn:active {
+  color: rgba(172, 94, 94, 0.3);
   background-color: #503e33;
 }
 
@@ -987,6 +980,7 @@ img {
   fill: #81b3d2;
 }
 
+.copyright-link:focus path,
 .copyright-link:active path {
   fill: #bdbbbc;
 }
@@ -1112,7 +1106,9 @@ img {
 }
 
 .modal-arrive-booking input::placeholder,
-.modal-departure-booking input::placeholder {
+.modal-departure-booking input::placeholder,
+.booking-number-adult input::placeholder,
+.booking-number-children input::placeholder {
   color: #000000;
   opacity: 1;
   font-weight: bold;
@@ -1185,7 +1181,7 @@ img {
 .booking-number-adult .minus-btn,
 .booking-number-children .minus-btn {
   position: absolute;
-  top: 3px;
+  top: -3px;
 
   width: 38px;
   height: 38px;
@@ -1222,7 +1218,7 @@ img {
 .booking-number-adult .plus-btn,
 .booking-number-children .plus-btn {
   position: absolute;
-  top: 2px;
+  top: -2px;
 
   width: 38px;
   height: 38px;
@@ -1275,7 +1271,3 @@ img {
   color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
 }
-
-  /*div, section, article, a, ul, li, p, footer, header, img {
-  outline: 1px solid red;
-  }*/
