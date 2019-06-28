@@ -47,6 +47,8 @@ form.addEventListener("submit", function (evt) {
   } else {
     if (isStorageSupport) {
       localStorage.setItem("checkin", checkin.value);
+      localStorage.setItem("number-adult", amount);
+      localStorage.setItem("number-children", amount);
     }
   }
 });
