@@ -568,7 +568,7 @@ img {
 .sights,
 .beautiful-road,
 .few-tourists {
-  margin-bottom: 50px;
+  margin-bottom: 48px;
 
   width: 33.3%;
 
@@ -618,11 +618,6 @@ img {
   width: 400px;
 }
 
-.more-reasons li:nth-child(2) {
-  padding-left: 30px;
-  padding-right: 45px;
-}
-
 .more-reasons h3 {
   margin-top: 80px;
   margin-right: 5px;
@@ -651,7 +646,7 @@ img {
 
   position: absolute;
   top: -20px;
-  left: 125px;
+  left: 120px;
 
   width: 74px;
   height: 70px;
@@ -666,7 +661,7 @@ img {
 
   position: absolute;
   top: -20px;
-  left: 105px;
+  left: 120px;
 
   width: 64px;
   height: 76px;
@@ -944,11 +939,13 @@ img {
 .search-booking-btn {
   position: relative;
 
+  display: inline-block;
   padding: 30px 139px 30px 140px;
 
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
+  vertical-align: baseline;
   color: #ffffff;
   background-color: #766357;
 }
@@ -1175,7 +1172,6 @@ img {
   position: absolute;
   left: 50%;
 
-  display: none;
   margin-left: -284px;
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
@@ -1203,7 +1199,7 @@ img {
 }
 
 .modal-arrive-booking {
-  margin-top: 50px;
+  margin-top: 55px;
 }
 
 .modal-booking p:nth-child(4) {
@@ -1215,11 +1211,7 @@ img {
   position: relative;
 
   margin-left: 55px;
-  margin-bottom: 20px;
-}
-
-.modal-departure-booking {
-  margin-bottom: 25px;
+  margin-bottom: 33px;
 }
 
 .modal-arrive-booking input[type="text"],
