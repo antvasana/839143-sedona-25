@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic"
     type="text/css">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -39,7 +39,7 @@
       <h1 class="visually-hidden">Седона - это туристический городок в штате Аризона</h1>
       <section class="intro">
         <div class="intro-invite">
-          <img class="intro-invite-text" src="img/sedona-welcome.png" width="459" height="353"
+          <img class="intro-invite-text" src="img/intro-welcome.svg" width="459" height="353"
             alt="Приглашение посетить Седону">
         </div>
         <div class="intro-description">
@@ -106,11 +106,6 @@
         <p class="search-booking-trip-date">укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения
           гостиниц в седоне
         </p>
-          <!--  Насколько я понимаю, форма обратной связи без подключенного джаваскрипта должна все время быть видимой.
-            А с подключенным джаваскриптом она появляется, только если кликнуть на ссылку  "поиск гостиницы в седоне".
-            Первым кликом по  "поиску гостиницы в седоне" форма обратной связи должна открываться, а повторным кликом
-            по ней - закрываться. Для этого надо использовать element.classList.toggle();
-            Здесь element - это popup? popup.classList.toggle("search-booking-btn"); ? -->
         <a class="search-booking-btn" href="writeus.html">поиск гостиницы в седоне</a>
         <form class="modal-booking" action="https://echo.htmlacademy.ru" method="post">
           <h2 class="visually-hidden">Форма поиска гостиницы в седоне</h2>
@@ -141,14 +136,14 @@
           <p class="modal-person-booking">
             <div class="booking-number-container">
               <div class="booking-number-adult">
-                <label for="number-adult-field">Взрослые:</label>
+                <label for="number-adult-field">взрослые:</label>
                 <button class="minus-btn" type="button" aria-label="Уменьшить на 1">&minus;</button>
                 <input class="number-persons" type="text" id="number-adult-field" name="number-adult" value="" placeholder="2"
                   pattern="[0-9]{1,2}" required>
                 <button class="plus-btn" type="button" aria-label="Увеличить на 1">&plus;</button>
               </div>
               <div class="booking-number-children">
-                <label for="number-children-field">Дети:</label>
+                <label for="number-children-field">дети:</label>
                 <button class="minus-btn" type="button" aria-label="Уменьшить на 1">&minus;</button>
                 <input class="number-persons" type="text" id="number-children-field" name="number-children" value="" placeholder="0"
                   pattern="[0-9]{1,2}">

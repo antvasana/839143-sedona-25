@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic"
     type="text/css">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -17,11 +17,6 @@
       <ul class="site-list">
         <li class="site-list-item">
           <a href="information.html">информация</a>
-          <!-- В ТЗ к Седоне сказано, что "3.3. Главное меню: пункт «Информация» не является ссылкой на главную страницу".
-
-А в критерии Д24. говорится, что "Страницы должны ссылаться друг на друга из главного меню".
-При этом в "Критериях" говорится, что при конфликте технического задания и критериев, считать техническое задание более приоритетным.
-Поэтому непонятно, на что должен ссылаться пункт «Информация» на странице sedona.hotels. -->
         </li>
         <li class="site-list-item">
           <a href="sedona-photo.html">фото и видео</a>
@@ -42,24 +37,24 @@
   <main class="page-main">
     <section class="filters">
       <h2 class="visually-hidden">Фильтр предложений</h2>
-      <form class="filter-seach" method="get" action="https://echo.htmlacademy.ru">
+      <form class="filter-seach" tabindex="0" method="get" action="https://echo.htmlacademy.ru">
         <div class="filter-seach-infrastructure">
           <fieldset>
             <legend class="filter-seach-infrastructure-legend">инфраструктура:</legend>
             <ul>
               <li class="filter-option">
-                <input class="visually-hidden filter-input" type="checkbox" name="pool-checkbox"
+                <input class="visually-hidden filter-input" tabindex="0" type="checkbox" name="pool-checkbox"
                   id="filter-seach-infrastructure-pool" value="swimming-pool" checked>
                 <label for="filter-seach-infrastructure-pool">бассейн</label>
               </li>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input" type="checkbox" name="parking-checkbox"
+              <li class="filter-option" tabindex="0">
+                <input class="visually-hidden filter-input" tabindex="-1" type="checkbox" name="parking-checkbox"
                   id="filter-seach-infrastructure-parking" value="parking">
                 <label for="filter-seach-infrastructure-parking">парковка</label>
               </li>
               <li class="filter-option">
                 <input class="visually-hidden filter-input" type="checkbox" name="wi-fi-checkbox"
-                  id="filter-seach-infrastructure-wi-fi" value="wi-fi">
+                  id="filter-seach-infrastructure-wi-fi" value="wi-fi" disabled>
                 <label for="filter-seach-infrastructure-wi-fi">wi-fi</label>
               </li>
             </ul>
@@ -133,10 +128,10 @@
         <div class="seach-results-booking">
           <img src="img/amara-hotel.jpg" width="135" height="90" alt="Гостиница Amara Resort & Spa">
           <div class="seach-results-information">
-            <h3 class="seach-results-demonstration-amara"><a href="#">amara resort & spa</a></h3>
+            <h3><a class="seach-results-habitation" href="#">amara resort & spa</a></h3>
             <p>гостиница <span class="seach-results-demonstration-hotel-price">от 4000 р.</span></p>
-            <button class="btn seach-results-demonstration-more">подробнее</button>
-            <button class="btn seach-results-demonstration-booking">забронировать</button>
+            <a class="seach-results-demonstration-more" href="#">подробнее</a>
+            <a class="seach-results-demonstration-booking" href="#">забронировать</a>
           </div>
         </div>
         <div class="hotel-rating">
@@ -147,10 +142,10 @@
         <div class="seach-results-booking">
           <img src="img/desert-motel.jpg" width="135" height="90" alt="Мотель Desert Quail Inn">
           <div class="seach-results-information">
-            <h3 class="seach-results-demonstration-desert"><a href="#">desert quail inn</a></h3>
+            <h3><a class="seach-results-habitation" href="#">desert quail inn</a></h3>
             <p>мотель <span class="seach-results-demonstration-motel-price">от 3000 р.</span></p>
-            <button class="btn seach-results-demonstration-more">подробнее</button>
-            <button class="btn seach-results-demonstration-booking">забронировать</button>
+            <a class="seach-results-demonstration-more" href="#">подробнее</a>
+            <a class="seach-results-demonstration-booking" href="#">забронировать</a>
           </div>
         </div>
         <div class="motel-rating">
@@ -161,10 +156,10 @@
         <div class="seach-results-booking">
           <img src="img/villas-apartments.jpg" width="135" height="90" alt="Villas at poco diablo">
           <div class="seach-results-information">
-            <h3 class="seach-results-demonstration-villas"><a href="#">villas at poco diablo</a></h3>
+            <h3><a class="seach-results-habitation" href="#">villas at poco diablo</a></h3>
             <p>апартаменты <span class="seach-results-demonstration-apartments-price">от 2000 р.</span></p>
-            <button class="btn seach-results-demonstration-more">подробнее</button>
-            <button class="btn seach-results-demonstration-booking">забронировать</button>
+            <a class="seach-results-demonstration-more" href="#">подробнее</a>
+            <a class="seach-results-demonstration-booking" href="#">забронировать</a>
           </div>
         </div>
         <div class="apartments-rating">
