@@ -295,44 +295,29 @@ img {
   background-image: url("../img/checkbox-on.svg");
 }
 
-/*.filter-input:disabled + label {
+.filter-input:disabled + label::before {
   content: "";
   position: absolute;
   top: 0;
-  left: -40px;
-
-  width: 25px;
-  height: 23px;
-
-  background-image: url("../img/checkbox-off-disabled.svg");
-  opacity: 0.3;
-}
-
-
-.filter-input:disabled:checked + label {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -40px;
-
-  width: 25px;
-  height: 23px;
-
-  background-image: url("../img/checkbox-on-disabled.svg");
-  opacity: 0.3;
-}*/
-
-disabled ~ label::before {
-  content: "";
-  position: absolute;
-  top: -2px;
   left: -40px;
 
   width: 23px;
   height: 23px;
 
   background-image: url("../img/checkbox-off-disabled.svg");
-  opacity: 0.3;
+}
+
+
+.filter-input:checked:disabled + label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -40px;
+
+  width: 27px;
+  height: 23px;
+
+  background-image: url("../img/checkbox-on-disabled.svg");
 }
 
 .filter-range {
@@ -1228,7 +1213,7 @@ disabled ~ label::before {
   position: relative;
 
   margin-left: 55px;
-  margin-bottom: 33px;
+  margin-bottom: 30px;
 }
 
 .modal-arrive-booking input[type="text"],
@@ -1347,12 +1332,14 @@ disabled ~ label::before {
 }
 
 .booking-number-container input[type="text"] {
+  display: inline-block;
   padding-top: 9px;
-  padding-bottom: 5px;
-  width: 110px;
+  padding-bottom: 8px;
+  max-width: 114px;
 
   text-align: center;
   font-weight: bold;
+  vertical-align: middle;
   text-transform: uppercase;
 
   border: 2px solid #f2f2f2;
@@ -1371,17 +1358,17 @@ disabled ~ label::before {
 
 .booking-number-adult input[type="text"] {
   margin-left: 37px;
-  margin-right: 50px;
+  margin-right: 55px;
 }
 
 .booking-number-children input[type="text"] {
-  margin-left: 32px;
+  margin-left: 24px;
 }
 
 .booking-number-adult .minus-btn,
 .booking-number-children .minus-btn {
   position: absolute;
-  top: -3px;
+  top: 0;
 
   width: 38px;
   height: 38px;
@@ -1412,13 +1399,13 @@ disabled ~ label::before {
 }
 
 .booking-number-children .minus-btn {
-  left: 75px;
+  left: 67px;
 }
 
 .booking-number-adult .plus-btn,
 .booking-number-children .plus-btn {
   position: absolute;
-  top: -2px;
+  top: 0;
 
   width: 38px;
   height: 38px;
@@ -1445,11 +1432,11 @@ disabled ~ label::before {
 }
 
 .booking-number-adult .plus-btn {
-  right: 53px;
+  right: 55px;
 }
 
 .booking-number-children .plus-btn {
-  right: 6px;
+  right: 3px;
 }
 
 .modal-submit-btn {
