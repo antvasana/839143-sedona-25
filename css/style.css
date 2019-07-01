@@ -308,7 +308,7 @@ img {
 }
 
 
-.filter-input:checked:disabled + label::before {
+.filter-input:checked:disabled ~ label::before {
   content: "";
   position: absolute;
   top: 0;
