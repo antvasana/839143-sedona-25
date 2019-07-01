@@ -1,7 +1,6 @@
-var link = document.querySelector(".search-booking-btn");
-
+var link = document.querySelector(".search-booking-link");
 var popup = document.querySelector(".modal-booking");
-var close = popup.querySelector(".search-booking-btn");
+var close = popup.querySelector(".modal-hidden");
 
 var form = popup.querySelector("form");
 var checkin = popup.querySelector("[name=checkin]");
@@ -24,7 +23,7 @@ link.addEventListener("click", function (evt) {
 
   if (storage) {
     checkin.value = storage;
-    checkout.focus();
+    checkout.value = storage;
   } else {
     checkin.focus();
   }
@@ -34,21 +33,17 @@ close.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.remove("modal-show");
   popup.classList.remove("modal-error");
-  popup.classList.toggle("search-booking-btn");
 });
 
 form.addEventListener("submit", function (evt) {
-  if (!checkin.value || !check-out.value || !number-adult.value || !number-children.value) {
+  if (!checkin.value || !checkout.value || !adult.value || !children.value) {
     evt.preventDefault();
     popup.classList.remove("modal-error");
     popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("modal-error");
-    console.log("Нужно ввести даты заезда, выезда, а также число взрослых и детей");
   } else {
     if (isStorageSupport) {
       localStorage.setItem("checkin", checkin.value);
-      localStorage.setItem("number-adult", amount);
-      localStorage.setItem("number-children", amount);
     }
   }
 });
@@ -59,7 +54,10 @@ window.addEventListener("keydown", function (evt) {
     if (popup.classList.contains("modal-show")) {
       popup.classList.remove("modal-show");
       popup.classList.remove("modal-error");
-      popup.classList.toggle("search-booking-btn");
+      popup.classList.toggle("modal-hidden");
     }
   }
 });
+
+
+
