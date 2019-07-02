@@ -283,7 +283,7 @@ img {
   background-image: url("../img/checkbox-off.svg");
 }
 
-.filter-input:checked ~ label::before {
+.filter-input:checked + label::before {
   content: "";
   position: absolute;
   top: -2px;
