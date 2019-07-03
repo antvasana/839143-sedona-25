@@ -1065,6 +1065,7 @@ img {
   background-color: #5496bd;
 }
 
+.social-btn:focus path,
 .social-btn:active path {
   fill: rgba(255, 255, 255, 0.3);
 }
